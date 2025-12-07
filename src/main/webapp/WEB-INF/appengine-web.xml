@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
+  <!-- Replace with your project id -->
+  <application>userapp-480012</application>
+  <version>1</version>
+  <threadsafe>true</threadsafe>
+  <runtime>java17</runtime>
+</appengine-web-app>

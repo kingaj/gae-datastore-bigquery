@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Migrate</title>
+
+    <style>
+        body {
+            background: #f2f4f8;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            width: 480px;
+            border-radius: 14px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background: #4a68d1;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #354fb0;
+        }
+
+        pre {
+            background: #eef1f7;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #d3d9e3;
+            height: 300px;
+            overflow: auto;
+            white-space: pre-wrap;
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <h1>Datastore → BigQuery Migration</h1>
+
+    <button id="migrateBtn">Migrate up to 100 rows</button>
+
+    <pre id="out"></pre>
+
+    <script src="js/migrate.js"></script>
+</div>
+</body>
+</html>

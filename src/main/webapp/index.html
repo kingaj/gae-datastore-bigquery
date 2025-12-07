@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Upload Users</title>
+
+    <style>
+        body {
+            background: #f2f4f8;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            width: 420px;
+            border-radius: 14px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        input[type="file"],
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            margin-top: 8px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background: #4a68d1;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #354fb0;
+        }
+
+        .secondary-btn {
+            background: #3b9c3f;
+        }
+
+        .secondary-btn:hover {
+            background: #2a7a2e;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-align: center;
+            width: 100%;
+            color: #1a73e8;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        label {
+            font-weight: bold;
+            color: #444;
+            font-size: 14px;
+        }
+
+        form {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+
+    <h1>Upload Users Excel</h1>
+
+    <form id="uploadForm" enctype="multipart/form-data">
+        <label>Select .xlsx File</label>
+        <input type="file" id="file" name="file" accept=".xlsx" />
+        <button type="button" id="uploadBtn">Upload</button>
+    </form>
+
+    <h2>Login</h2>
+
+    <form id="loginForm">
+        <label>Email</label>
+        <input name="email" placeholder="email" type="text"/>
+
+        <label>Password</label>
+        <input name="password" placeholder="password" type="password"/>
+
+        <button id="loginBtn" type="submit" class="secondary-btn">Login</button>
+    </form>
+
+    <a href="/migrate.html">Open Migrate Page →</a>
+
+    <script src="js/upload.js"></script>
+
+</div>
+</body>
+</html>
